@@ -130,48 +130,4 @@ gsap.utils.toArray(
 
 });
 
-
-
-
-
-/* ==============================
-   IMAGE PARALLAX
-============================== */
-
-
-gsap.utils.toArray(
-".project-image img"
-)
-
-.forEach(img=>{
-
-
-    gsap.to(img,{
-
-
-        y:-30,
-
-
-        ease:"none",
-
-
-        scrollTrigger:{
-
-            trigger:img,
-
-            start:"top bottom",
-
-            end:"bottom top",
-
-            scrub:.8
-
-        }
-
-
-    });
-
-
-});
-
-
 });
