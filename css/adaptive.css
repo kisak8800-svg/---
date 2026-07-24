@@ -288,3 +288,34 @@
 
 
 }
+@media (max-width:768px){
+
+    .service-item p {
+
+        opacity:1;
+
+        transform:none;
+
+        color:#D0D0D0;
+
+    }
+
+
+    .service-item {
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+        padding:40px 0;
+
+    }
+
+
+    .service-item__number {
+
+        font-size:12px;
+
+    }
+
+}
