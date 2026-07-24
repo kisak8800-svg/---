@@ -1268,13 +1268,13 @@
 
 .service-item p {
 
-    color:#AFAFAF;
+    color:#D0D0D0;
 
     line-height:1.7;
 
-    opacity:.45;
+    opacity:1;
 
-    transform:translateX(20px);
+    transform:none;
 
     transition:.5s ease;
 
