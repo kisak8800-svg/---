@@ -1,0 +1,290 @@
+/* ==================================================
+   NOVA Atelier
+   RESPONSIVE DESIGN
+================================================== */
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+
+@media (max-width: 1100px) {
+
+
+    .header {
+
+        padding: 30px 0;
+
+    }
+
+
+
+    .hero__wrapper {
+
+        grid-template-columns: 40px 1fr;
+
+    }
+
+
+
+    .hero__title span {
+
+        font-size: clamp(75px, 12vw, 150px);
+
+    }
+
+
+
+    .hero__image {
+
+        width: 300px;
+
+        right: 0;
+
+        opacity: .8;
+
+    }
+
+
+
+}
+
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+
+@media (max-width: 768px) {
+
+
+    :root {
+
+        --padding-horizontal: 25px;
+
+    }
+
+
+
+    .page-grid {
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+    .header {
+
+        padding: 25px 0;
+
+    }
+
+
+
+    .header__logo {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .header__menu {
+
+        font-size: 11px;
+
+    }
+
+
+
+
+    /* MENU */
+
+
+    .menu__nav {
+
+        gap: 18px;
+
+    }
+
+
+
+    .menu__nav a {
+
+        font-size: 60px;
+
+    }
+
+
+
+    .menu__close {
+
+        top:25px;
+
+        right:25px;
+
+    }
+
+
+
+
+    /* HERO */
+
+
+    .hero {
+
+        min-height: 100svh;
+
+    }
+
+
+
+    .hero__wrapper {
+
+        display:block;
+
+    }
+
+
+
+    .hero__aside {
+
+        display:none;
+
+    }
+
+
+
+    .hero__content {
+
+        padding-top:130px;
+
+    }
+
+
+
+    .hero__eyebrow {
+
+        margin-bottom:30px;
+
+        letter-spacing:.35em;
+
+    }
+
+
+
+    .hero__title span {
+
+        font-size:
+
+        clamp(
+            70px,
+            19vw,
+            110px
+        );
+
+    }
+
+
+
+    .hero__title-small {
+
+        margin-left:40px;
+
+        font-size:
+
+        clamp(
+            35px,
+            9vw,
+            60px
+        ) !important;
+
+    }
+
+
+
+    .hero__image {
+
+        position:relative;
+
+        top:auto;
+
+        right:auto;
+
+        transform:none;
+
+        width:70%;
+
+        margin:40px 0 0 auto;
+
+        aspect-ratio: .85;
+
+    }
+
+
+
+    .hero__footer {
+
+        position:relative;
+
+        bottom:auto;
+
+        margin-top:50px;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+
+}
+
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+
+@media (max-width: 420px) {
+
+
+    .hero__title span {
+
+        font-size:65px;
+
+    }
+
+
+
+    .hero__title-small {
+
+        margin-left:20px;
+
+    }
+
+
+
+    .hero__image {
+
+        width:85%;
+
+    }
+
+
+
+    .menu__nav a {
+
+        font-size:48px;
+
+    }
+
+
+}

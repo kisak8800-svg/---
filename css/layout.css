@@ -1,0 +1,245 @@
+/* ==================================================
+   NOVA Atelier
+   LAYOUT SYSTEM
+================================================== */
+
+
+/* ==================================================
+   PAGE GRID
+   Architectural vertical grid
+================================================== */
+
+
+.page-grid {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+
+.page-grid span {
+
+    border-left: 1px solid var(--color-line);
+
+}
+
+
+.page-grid span:last-child {
+
+    border-right: 1px solid var(--color-line);
+
+}
+
+
+
+/* ==================================================
+   MAIN WRAPPER
+================================================== */
+
+
+main {
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+/* ==================================================
+   FLEX UTILITIES
+================================================== */
+
+
+.flex {
+
+    display: flex;
+
+}
+
+
+.flex-center {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.flex-between {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+
+/* ==================================================
+   GRID SYSTEM
+================================================== */
+
+
+.grid {
+
+    display: grid;
+
+}
+
+
+.grid-2 {
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.grid-3 {
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.grid-4 {
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+
+/* ==================================================
+   SPACING SYSTEM
+================================================== */
+
+
+.section-padding {
+
+    padding-top: clamp(80px, 10vw, 160px);
+
+    padding-bottom: clamp(80px, 10vw, 160px);
+
+}
+
+
+
+/* ==================================================
+   FULL SCREEN SECTIONS
+================================================== */
+
+
+.screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+/* ==================================================
+   POSITION HELPERS
+================================================== */
+
+
+.relative {
+
+    position: relative;
+
+}
+
+
+.absolute {
+
+    position: absolute;
+
+}
+
+
+.hidden {
+
+    overflow: hidden;
+
+}
+
+
+
+/* ==================================================
+   Z INDEX SYSTEM
+================================================== */
+
+
+.z-background {
+
+    z-index: 0;
+
+}
+
+
+.z-content {
+
+    z-index: 2;
+
+}
+
+
+.z-top {
+
+    z-index: 10;
+
+}
+
+
+
+/* ==================================================
+   IMAGE SYSTEM
+================================================== */
+
+
+.image-cover {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+/* ==================================================
+   ARCHITECTURAL DIVIDERS
+================================================== */
+
+
+.line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: var(--color-line);
+
+}

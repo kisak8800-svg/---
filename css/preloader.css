@@ -1,0 +1,69 @@
+/* ==================================================
+   PRELOADER
+================================================== */
+
+.preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#0B0B0B;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:20000;
+
+}
+
+.preloader__content{
+
+    text-align:center;
+
+}
+
+.preloader__logo{
+
+    font-family:var(--font-display);
+
+    font-size:clamp(52px,5vw,82px);
+
+    letter-spacing:.08em;
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+}
+
+.preloader__line{
+
+    display:block;
+
+    width:0;
+
+    height:1px;
+
+    background:rgba(255,255,255,.25);
+
+    margin:30px auto;
+
+}
+
+.preloader__text{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.45em;
+
+    color:var(--color-gray);
+
+    opacity:0;
+
+}
