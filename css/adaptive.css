@@ -208,21 +208,23 @@
 
     .hero__image {
 
-        position:relative;
+    position:relative;
 
-        top:auto;
+    top:auto;
 
-        right:auto;
+    right:auto;
 
-        transform:none;
+    transform:none;
 
-        width:70%;
+    width:75%;
 
-        margin:40px 0 0 auto;
+    margin:25px auto 0;
 
-        aspect-ratio: .85;
+    aspect-ratio:.85;
 
-    }
+    opacity:1;
+
+}
 
 
 
@@ -316,6 +318,23 @@
 
         font-size:12px;
 
+    }
+
+}
+@media (max-width: 768px) {
+
+    .studio__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .studio__image img {
+        height: 420px;
+    }
+
+    .studio__stats {
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
