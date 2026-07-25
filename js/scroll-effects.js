@@ -16,33 +16,22 @@ window.addEventListener("load",()=>{
 ============================== */
 
 
-gsap.utils.toArray(".section-title").forEach(title=>{
+gsap.utils.toArray(".project__image").forEach(image => {
 
+    gsap.from(image, {
 
-    gsap.from(title,{
-
-        scrollTrigger:{
-
-            trigger:title,
-
-            start:"top 85%",
-
-            once:true
-
+        scrollTrigger: {
+            trigger: image,
+            start: "top 80%",
+            once: true
         },
 
-
-        y:40,
-
-        opacity:0,
-
-        duration:1.2,
-
-        ease:"power3.out"
-
+        scale: 0.96,
+        opacity: 0,
+        duration: 1.4,
+        ease: "power3.out"
 
     });
-
 
 });
 
