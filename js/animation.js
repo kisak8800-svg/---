@@ -57,28 +57,30 @@ window.addEventListener("load", () => {
     }, "-=0.8");
 
 
-    /* ==========================
-       HERO PARALLAX
-    ========================== */
+   /* ==================================================
+   HERO PARALLAX
+================================================== */
 
-    const heroImage = document.querySelector(".hero__image");
-    const heroTitle = document.querySelector(".hero__title");
+if (window.innerWidth > 768) {
 
     window.addEventListener("scroll", () => {
 
+        const image = document.querySelector(".hero__image");
+        const title = document.querySelector(".hero__title");
+
+        if (!image || !title) return;
+
         const scroll = window.scrollY;
 
-        if (heroImage) {
-            heroImage.style.transform =
-                `translateY(calc(-40% + ${scroll * 0.08}px))`;
-        }
+        image.style.transform =
+            `translateY(calc(-40% + ${scroll * 0.08}px))`;
 
-        if (heroTitle) {
-            heroTitle.style.transform =
-                `translateY(${scroll * 0.03}px)`;
-        }
+        title.style.transform =
+            `translateY(${scroll * 0.03}px)`;
 
     });
+
+}
 
 
     /* ==========================
