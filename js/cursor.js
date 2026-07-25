@@ -3,61 +3,80 @@
    CUSTOM CURSOR
 ================================================== */
 
-const cursor = document.querySelector(".cursor");
-const dot = document.querySelector(".cursor-dot");
+@media (hover:hover) and (pointer:fine){
 
-if (cursor && dot) {
+html,
+body{
 
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
+    cursor:none;
 
-    let cursorX = mouseX;
-    let cursorY = mouseY;
+}
 
-    document.addEventListener("mousemove", (e) => {
+a,
+button{
 
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+    cursor:none;
 
-        dot.style.left = mouseX + "px";
-        dot.style.top = mouseY + "px";
+}
 
-    });
+.cursor{
 
-    function animateCursor() {
+    position:fixed;
 
-        cursorX += (mouseX - cursorX) * 0.15;
-        cursorY += (mouseY - cursorY) * 0.15;
+    left:0;
+    top:0;
 
-        cursor.style.left = cursorX + "px";
-        cursor.style.top = cursorY + "px";
+    width:42px;
+    height:42px;
 
-        requestAnimationFrame(animateCursor);
+    border:1px solid rgba(214,177,122,.65);
 
-    }
+    border-radius:50%;
 
-    animateCursor();
+    transform:translate(-50%,-50%);
 
-    const hoverElements = document.querySelectorAll(
+    pointer-events:none;
 
-        "a, button, .service-item, .project-card, .hero__image"
+    z-index:9999;
 
-    );
+    transition:
 
-    hoverElements.forEach(item => {
+        width .35s ease,
+        height .35s ease,
+        border-color .35s ease,
+        background .35s ease;
 
-        item.addEventListener("mouseenter", () => {
+}
 
-            cursor.classList.add("active");
+.cursor-dot{
 
-        });
+    position:fixed;
 
-        item.addEventListener("mouseleave", () => {
+    left:0;
+    top:0;
 
-            cursor.classList.remove("active");
+    width:6px;
+    height:6px;
 
-        });
+    background:#D6B17A;
 
-    });
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    z-index:10000;
+
+}
+
+.cursor.active{
+
+    width:72px;
+    height:72px;
+
+    background:rgba(214,177,122,.08);
+
+}
 
 }
